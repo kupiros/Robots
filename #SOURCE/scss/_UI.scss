@@ -1,0 +1,17 @@
+.market__img {
+  flex-grow: 1;
+  margin-bottom: 20px;
+  display:flex;align-items:center;justify-content:center;
+  position: relative;
+  &:before {
+    content: '';
+    box-shadow: 0 0 70px 20px $orange;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+  }
+  svg {
+    fill: $orange;
+  }
+}
+

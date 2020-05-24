@@ -1,0 +1,45 @@
+
+//------------------------------ПЕРВОНАЧАЛЬНЫЕ НАСТРОЙКИ-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+//переменные
+$wc: 1000px; //стандартная ширина контейнера
+
+$orange: #ff7f22;
+$darkorange: #ff4500;
+$blue: #A3B8CC;
+$disabled: #7D90A6;
+
+
+//шрифты (юзай fff)
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat.woff2') format('woff2'), url('../fonts/Montserrat.woff') format('woff'), url('../fonts/Montserrat.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/MontserratBold.woff2') format('woff2'), url('../fonts/MontserratBold.woff') format('woff'), url('../fonts/MontserratBold.ttf') format('truetype');
+  font-weight: bold;
+}
+
+//вруби теперь шрифт этот
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: radial-gradient(circle at center 400px, #243443, #212429 50%);
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+//------------------------------НЕ ТРОГАТЬ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@import 'basics';
+@import '_IMPORTS';
+@import '_UI';

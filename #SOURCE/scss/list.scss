@@ -1,0 +1,43 @@
+.list {
+  display: flex;
+  li {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin-right: 60px;
+    text-align: center;
+  }  
+}
+
+.list__title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.list__colvo {
+  margin-bottom: 10px;
+}
+
+.list__price {
+  color: $blue;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.list__btn {
+  background-color: $orange;
+  border-radius: 100px;
+  padding: 10px;
+  margin-top: 10px;
+  &:hover {
+    background-color: $darkorange;
+  }
+  &:active {
+    background-color: $orange;
+  }
+  &:disabled {
+    background-color: #4C5865;
+  cursor: auto;
+  color: $disabled;
+  }
+}

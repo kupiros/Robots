@@ -1,0 +1,92 @@
+.production__wrap {
+  display: flex;
+}
+.production__column {
+  flex: 0 0 33.333%;
+  font-size: 20px;
+  padding: 0 10px;
+}
+.production__name {  
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.production__checkWrap {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.production__item {
+  width: 25%;
+  padding: 10px;
+  label {
+    border: 2px solid #333940;
+    border-radius: 5px;
+    height: 50px;
+    display:flex;align-items:center;justify-content:center;
+    background-color: #333940;
+    svg {
+      fill: white;
+    }
+  }
+  input:hover + label {
+    border-color: $orange;
+    svg {
+      fill: $orange;
+    }
+  }
+  input:checked + label {
+    border-color: $orange;
+    background-color: transparent;
+    svg {
+      fill: $orange;
+    }
+  }
+  input:disabled + label {
+    border-color: #333940;
+    background-color: #333940;
+    svg {
+      fill: #4C5865;
+    }
+  }
+}
+
+.production__column_2 ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.production__column_3 {
+  display: flex;
+  justify-content: center;
+}
+
+.production {
+  padding-bottom: 50px;
+}
+
+.production__check {
+  margin-right: 20px;
+  &::before {
+    width: 20px;
+    height: 20px;
+    border: 2px solid white;
+    margin-right: 10px;
+  }
+  &::after {
+    width: 10px;
+    height: 10px;
+    background-color: $orange;
+    top: calc(50% - (10px/2));
+    left: calc(20px/2 - 10px/2);
+  }
+}
+
+.production__getRobotBtn {
+  width: 80%;
+}
+
+.production__info {
+  margin-top: 20px;
+  font-size: 14px;
+  color: $blue;
+}

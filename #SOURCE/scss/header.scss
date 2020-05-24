@@ -1,0 +1,18 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+  margin-bottom: 100px;
+}
+.header__makeBtn {
+  padding: 10px 20px;
+  border: 2px solid $orange;
+  border-radius: 100px;
+  font-size: 16px;
+  &:hover {
+    background-color: $orange;
+  }
+  &:active {
+    background-color: $darkorange;
+  }
+}

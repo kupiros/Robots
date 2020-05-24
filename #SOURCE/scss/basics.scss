@@ -1,0 +1,144 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,*::before,*::after {
+  box-sizing: border-box;
+}
+html,body {
+  width: 100%;
+  font-size: 100%;
+  line-height: 1.5;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-size: 14px;
+  min-width: 320px;
+}
+main,nav,footer,header,aside {
+  display: block;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+button, input, optgroup, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1;
+}
+button, input {
+  overflow: visible;
+  color: inherit;
+}
+button, select {
+  text-transform: none;
+}
+button, [type="button"], [type="reset"], [type="submit"] {
+  -webkit-appearance: button;
+}
+button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-moz-focus-inner, [type="submit"]::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+button:-moz-focusring, [type="button"]:-moz-focusring, [type="reset"]:-moz-focusring, [type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+template {
+  display: none;
+}
+[hidden] {
+  display: none;
+}
+ul,ol {
+  list-style: none;
+}
+button {
+  background: none;
+  cursor: pointer;
+}
+
+
+
+
+
+
+a {
+  background-color: transparent;
+  text-decoration: none;
+  text-align: center;
+  color: inherit;
+  display: inline-block;
+  vertical-align: top;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+
+._img {
+  overflow: hidden;
+  position: relative;
+  img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  & + label {
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    &::before, &::after {
+      content: '';
+    }
+    &::after {
+      position: absolute;
+      display: none;
+    }
+  }
+  &:checked + label::after {
+    display: block;
+  }
+  &:disabled + label {
+    color: #7D90A6;
+    cursor: auto;
+    &::before {
+      border-color: #7D90A6;
+    }
+  }
+}
+input[type="radio"] + label {
+  &::before, &::after {
+    border-radius: 50%;
+  }
+}
+
+._lock {
+  overflow: hidden;
+}
+
+._container {
+  box-sizing: content-box;
+  padding: 0 5%;
+  margin: 0 auto;
+  max-width: $wc;
+}
+
+button {
+  outline: none;
+}

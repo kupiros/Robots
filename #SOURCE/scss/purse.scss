@@ -1,0 +1,58 @@
+.purse {
+  margin-top: 100px;
+}
+.purse__purse {
+  height: 25px;
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  img {
+    height: 100%;
+    width: auto;
+    margin-right: -12px;
+  }
+}
+.purse__value {
+  font-size: 24px;
+  color: $blue;
+  margin-bottom: 40px;
+}
+.purse__wrap {
+  display: flex;
+}
+.purse__getBtn {
+  color: $orange;
+  font-size: 16px;
+  border-bottom: 1px solid $orange;
+  margin-right: 30px;
+  &:hover {
+    border-color: transparent;
+    color: $darkorange;
+  }
+  &:active {
+    border-color: $darkorange;
+  }
+  &:disabled {
+    color: $disabled;
+    border-color: transparent;
+    cursor: auto;
+  }
+}
+.purse__get5 {
+  &::before {
+    width: 24px;
+    height: 24px;
+    border: 2px solid $blue;
+    margin-right: 10px;
+  }
+  &::after {
+    width: 8px;
+    height: 13px;
+    transform: rotate(45deg);
+    border-right: 2px solid $orange;
+    border-bottom: 2px solid $orange;
+    top: 4px;
+    left: 8px;
+  }
+}
